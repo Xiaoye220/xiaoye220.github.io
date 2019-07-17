@@ -264,9 +264,10 @@ a.footnote {
 // Image
 img {
   display: block;
-  max-width: 100%;
-  margin: 0 0 1em;
+  max-width: 80%;
+  margin: 1em auto;
   border-radius: 5px;
+  box-shadow: 0 0 20px #888;
 }
 
 // Fixes images in popup boxes from Google Translate
