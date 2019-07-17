@@ -1,4 +1,15 @@
-## Command Line Tool
+---
+layout: post
+title: macOS Command Line Tool
+date: 2019-07-17
+Author: Xiaoye
+categories: 
+tags: [macOS]
+comments: true
+
+---
+
+
 
 最近找 WWDC 的字幕资源时，找到一个挺好的工具 [WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 瞬间觉得有一个自己的命令行工具那简直装逼能力 Max 啊。看了一下，大部分都是使用 [Swift Package Manager](<https://swift.org/package-manager/>) 实现的，但是我在 XCode 中新建 Project 找到一个 Command Line Tool 选项，使用它构建命令行工具更加方便
 
