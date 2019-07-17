@@ -21,7 +21,7 @@ typora-root-url: ../2019-07-17-command-line-tool
 
 首先先新建一个 Command Line Tool 工程
 
-![1](../2019-07-17-command-line-tool/1.png)
+![1](../images/2019-07-17-command-line-tool/1.png)
 
 
 
@@ -33,7 +33,7 @@ typora-root-url: ../2019-07-17-command-line-tool
 
 
 
-![2](2.gif)
+![2](../images/2019-07-17-command-line-tool/2.gif)
 
 
 
@@ -129,7 +129,7 @@ if args[1] == "--sum" {
 
 我们编写玩 `main.swift` 后，XCode build 一下，会在 `Products` 生成一个可执行文件
 
-![3](3.png)
+![3](../images/2019-07-17-command-line-tool/3.png)
 
 我们右键 `Show in Finder` 后，在 Terminal 中当前路径下执行以下命令，将该可执行文件拷贝到指定路径下，那么我们就可以用 `yzf` 调用命令行了
 
@@ -147,7 +147,7 @@ cp CommandLine /usr/local/bin/yzf
 cp $BUILT_PRODUCTS_DIR/$PRODUCT_NAME /usr/local/bin/yzf
 ```
 
-![4](4.png)
+![4](../images/2019-07-17-command-line-tool/4.png)
 
 
 
@@ -155,11 +155,11 @@ cp $BUILT_PRODUCTS_DIR/$PRODUCT_NAME /usr/local/bin/yzf
 
 仔细看看  [WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 、[onevcat/FengNiao](<https://github.com/onevcat/FengNiao>)，都会提供一个 `--help` 显示提示信息，并且可以改变 Terminal 输出的文字的颜色，就像下面这种效果
 
-![5](5.png)
+![5](../images/2019-07-17-command-line-tool/5.png)
 
 我们要实现这些效果，可以使用两个第三方库 [CommandLineKit](<https://github.com/jatoben/CommandLine>)、[Rainbow](https://github.com/onevcat/Rainbow.git)，一个用于解析命令行输入，一个用于改变命令行输出字体颜色。但是对于添加第三方库，由于 Command Line Tool 使用 CocoaPods 添加的话，编译的时候会报错，所有我为了方便，直接将源码加入工程中
 
-![6](6.png)
+![6](../images/2019-07-17-command-line-tool/6.png)
 
 
 
@@ -221,8 +221,8 @@ if let value = git_add_tag.value {
 
 ### 参考资料
 
- [WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 
+[WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 
 
 [onevcat/FengNiao](<https://github.com/onevcat/FengNiao>)
 
- [Swift Package Manager](<https://swift.org/package-manager/>) 
+[Swift Package Manager](<https://swift.org/package-manager/>) 
