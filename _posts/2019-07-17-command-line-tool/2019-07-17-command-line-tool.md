@@ -6,7 +6,7 @@ Author: Xiaoye
 categories: 
 tags: [macOS]
 comments: true
-
+typora-root-url: ../2019-07-17-command-line-tool
 ---
 
 
