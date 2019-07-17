@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1500px;
   padding: 0 20px;
   width: 100%;
 }
@@ -371,13 +371,13 @@ img {
 
     img {
       display: inline-block;
-      border-radius: 2px;
+      border-radius: 500px;
     }
   }
 }
 
 .site-name {
-  margin: 0 auto;
+  margin: 20 auto;
   color: $base-color;
   cursor: pointer;
   font-family: $base-font;
@@ -429,7 +429,7 @@ nav {
 
 .wrapper-content {
   float: right;
-  width: 70%;
+  width: 75%;
 
   @include mobile {
     float: none;
