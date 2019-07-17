@@ -21,7 +21,7 @@ typora-root-url: ../2019-07-17-command-line-tool
 
 首先先新建一个 Command Line Tool 工程
 
-![1](1.png)
+![1](../2019-07-17-command-line-tool/1.png)
 
 
 
