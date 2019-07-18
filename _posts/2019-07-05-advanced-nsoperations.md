@@ -16,7 +16,7 @@ comments: false
 
 比如下面就是 WWDC 应用启动的一个流程，后面的操作都依赖与前面的操作完成，通过 NSOperation 添加 Dependency 就可以很好的确保这些操作按顺序执行。提取了代码中的逻辑，将逻辑加到 NSOperation 中，简化逻辑变化。
 
-![1](../images/2019-07-05-advanced-nsoperations/1.png)
+![1](../images/2019-07-05-Advanced-NSOperations/1.png)
 
 
 
