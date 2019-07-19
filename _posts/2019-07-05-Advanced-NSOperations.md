@@ -4,7 +4,7 @@ title: iOS - Advanced NSOperations
 date: 2019-07-5
 Author: Xiaoye
 categories: 
-tags: [WWDC, NSOperation, iOS]
+tags: [WWDC, iOS]
 comments: false
 ---
 
