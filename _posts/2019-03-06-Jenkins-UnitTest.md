@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS - Jenkins 实现 Unit Test 并输出测试结果、覆盖率）
+title: iOS - Jenkins 实现 Unit Test 并输出测试结果、覆盖率
 date: 2019-03-06
 Author: Xiaoye
 categories: 
@@ -11,13 +11,13 @@ comments: false
 本文主要介绍了 XCode 如何查看 Unit Test 的 Coverage？如何排除 CocoaPods 添加的第三方库对 Coverage 的影响？如何通过 Jenkins 完成自动化测试，并且将结果可视化输出？
 
 ### 版本信息
-* Xcode `10.1`
-* iOS `12`
-* Jenkins `2.135`
-  *  [JUnit](https://plugins.jenkins.io/junit)  `1.24`
-  * [HTML Publisher](https://plugins.jenkins.io/htmlpublisher) `1.18`
-* [slather](https://github.com/SlatherOrg/slather) `2.4.6`
-* [OCUnit2JUnit](https://github.com/ciryon/OCUnit2JUnit) `1.4`
+* Xcode - 10.1
+* iOS - 12
+* Jenkins - 2.135
+  *  [JUnit](https://plugins.jenkins.io/junit)  - 1.24
+  * [HTML Publisher](https://plugins.jenkins.io/htmlpublisher) - 1.18
+* [slather](https://github.com/SlatherOrg/slather) - 2.4.6
+* [OCUnit2JUnit](https://github.com/ciryon/OCUnit2JUnit) - 1.4
 
 
 ### 1.基础测试
