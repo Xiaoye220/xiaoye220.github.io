@@ -10,7 +10,7 @@ toc: true
 
 在使用 `NSKeyedArchiver` 归档 `URLResponse` 时发现 `unchiver` 出来的始终是 `nil` ，因此对 iOS 归档进行了一番研究查找原因
 
-### 1. NSCoding , NSSecureCoding
+## 1. NSCoding , NSSecureCoding
 
 我们要使一个对象支持归档，那么必须实现协议 `NSCoding` ，在 `iOS 6.0` 之后出了 `NSSecureCoding` 用来替代 `NSCoding`。那么 `NSSecureCoding` 相比 `NSCoding` 都有哪些优势呢
 
@@ -44,13 +44,13 @@ if let object = decoder.decodeObjectForKey("myKey") as MyClass {
 let obj = decoder.decodeObject(of:MyClass.self, forKey: "myKey")
 ```
 
-### 2. 归档一个 NSSecureCoding 类型
+## 2. 归档 NSSecureCoding 类型
 
 这里就用 `URLResponse` 为例，因为在 `iOS 12` 部分 API 被 `deprecated`，所以代码分 iOS 12 之前和之后两种
 
-#### 2.1 实例方法
+### 2.1 实例方法
 
-##### Archiver:
+#### Archiver
 
 ```swift
 func achiver<T: NSSecureCoding>(_ obj: T) -> Data {
@@ -71,7 +71,7 @@ func achiver<T: NSSecureCoding>(_ obj: T) -> Data {
 }
 ```
 
-##### UnArchiver:
+#### UnArchiver
 
 ```swift
 func unarchiver<T: NSSecureCoding & NSObject>(_ data: Data) -> T? {
@@ -97,7 +97,7 @@ func unarchiver<T: NSSecureCoding & NSObject>(_ data: Data) -> T? {
 }
 ```
 
-##### 使用:
+#### 使用
 
 ```swift
 let obj = URLResponse()
@@ -107,9 +107,9 @@ let achiverData = self.achiver(obj)
 let unchiverObj: URLResponse? = self.unarchiver(achiverData)
 ```
 
-#### 2.2 静态方法
+### 2.2 静态方法
 
-##### Archiver:
+#### Archiver
 
 ```swift
 func achiver<T: NSSecureCoding>(_ obj: T) -> Data {
@@ -128,7 +128,7 @@ func achiver<T: NSSecureCoding>(_ obj: T) -> Data {
 }
 ```
 
-##### UnArchiver:
+#### UnArchiver
 
 ```swift
 func unarchiver<T: NSSecureCoding & NSObject>(_ data: Data) -> T? {
@@ -150,7 +150,7 @@ func unarchiver<T: NSSecureCoding & NSObject>(_ data: Data) -> T? {
 
 ##### 
 
-### 3.归档自定义对象
+## 3.归档自定义对象
 
 自定义对象必须实现协议 `NSSecureCoding`
 
