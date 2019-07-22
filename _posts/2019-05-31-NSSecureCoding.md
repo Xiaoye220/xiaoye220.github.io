@@ -3,9 +3,9 @@ layout: post
 title: iOS - 归档 NSSecureCoding
 date: 2019-05-31
 Author: Xiaoye
-categories: 
 tags: [iOS]
-comments: false
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 在使用 `NSKeyedArchiver` 归档 `URLResponse` 时发现 `unchiver` 出来的始终是 `nil` ，因此对 iOS 归档进行了一番研究查找原因

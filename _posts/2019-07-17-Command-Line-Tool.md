@@ -3,9 +3,8 @@ layout: post
 title: macOS - Command Line Tool
 date: 2019-07-17
 Author: Xiaoye
-categories: 
 tags: [macOS]
-comments: false
+excerpt_separator: <!--more-->
 toc: true
 ---
 
@@ -27,7 +26,7 @@ toc: true
 
 看看我们要实现的一个效果
 
-* 输入 `yzf --time` 或者 `yzf -t` ，输出当前时间
+* 输入 `yzf --helloworld` ，输出 "HELLO WORLD"
 * 输入 `yzf --add_tag 1.0.0`，如果 git 没有 `1.0.0` 的 tag，则新增该 tag；如果已经存在 `1.0.0` 版本的 tag，则删除旧的 tag 重新添加 tag。这个是我在组件化时经常需要执行的操作，这样子就可以简化操作，一行命令就 OK
 * 输入 `yzf --sum` 后，输入 n 个数字，计算输入数字的和
 
@@ -41,7 +40,7 @@ toc: true
 
 我们代码都在新建完工程后的 `main.swift` 文件中编写，所有的代码逻辑和写 iOS 应用是一样的
 
-#### 1. 实现 —time 、 -t 命令
+#### 1. 实现 —helloworld
 
 ```swift
 // Swift.CommandLine 为自带的类
@@ -49,10 +48,17 @@ toc: true
 // 比如输入 yzf --time，那么 args = ["yzf", "--time"]
 let args = Swift.CommandLine.arguments
 
-// 判断参数是否为 -t 或者 --time
-if args[1] == "-t" || args[1] == "--time" {
-    //  Terminal 输出当前时间
-    print(Date())
+// 判断参数是否为 --helloworld
+if args[1] == "--helloworld" {
+    let helleworld = """
+         _   _      _ _    __        __         _     _
+        | | | | ___| | | __\\ \\      / /__  _ __| | __| |
+        | |_| |/ _ \\ | |/ _ \\ \\ /\\ / / _ \\| '__| |/ _` |
+        |  _  |  __/ | | (_) \\ V  V / (_) | |  | | (_| |
+        |_| |_|\\___|_|_|\\___/ \\_/\\_/ \\___/|_|  |_|\\__,_|
+
+    """
+    print(helleworld)
 }
 ```
 

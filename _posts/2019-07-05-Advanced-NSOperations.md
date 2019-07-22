@@ -3,9 +3,9 @@ layout: post
 title: iOS - Advanced NSOperations
 date: 2019-07-5
 Author: Xiaoye
-categories: 
 tags: [WWDC, iOS]
-comments: false
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 
@@ -30,7 +30,7 @@ comments: false
 
 
 
-### 1. 自定义 Operation
+## 1. 自定义 Operation
 
 有时候我们想自定义一个 Operation，并且 **管理它的状态**，如果无需管理状态，那么直接重写 main 方法添加自己的操作即可。比如一个网络请求的 Operation，在 add 到 Queue 中执行请求，在请求完成后设置状态为 finished，并执行后面的 Operation，那么可以参考 [Defining a Custom Operation Object](<https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationObjects/OperationObjects.html#//apple_ref/doc/uid/TP40008091-CH101-SW16>)，一个基本的结构如下。
 
@@ -106,7 +106,7 @@ class MyOperation: Operation {
 
 
 
-### 2. Operation 状态管理
+## 2. Operation 状态管理
 
 在 NSOperation 中原有的有四种状态
 
@@ -131,7 +131,7 @@ fileprivate enum State: Int {
 
 我们先不管上面的七个状态，主要看看原本自带的四种状态
 
-#### isReady
+### isReady
 
 isReady 状态用来标记 Operation 是否可以开始执行了。isReady 的值取决于其依赖的 Operations 是否执行完毕，如果有依赖的 Operation 未执行完毕，那么 isReady 为 false。只有 isReady 为 true，才能执行 Operation 的 start 方法。对于想要自己控制 isReady 状态的话，我们需要合并 `super.isReady` 的值，原因在上面也提到了
 
@@ -151,26 +151,26 @@ override var isReady: Bool {
 
 
 
-#### isExcuting
+### isExcuting
 
 就是字面意思，用于判断当前 main 中的任务是否正在执行
 
 
 
-#### isFinished
+### isFinished
 
 用于判断任务是否执行完毕，通过 KVO 设置 Operation 的 isFinished 为 true 可以使 OperationQueue 移除当前 Operation 并执行后面的 Operation
 
 
 
-#### isCancelled
+### isCancelled
 
 * 当 Operation 还未执行时，比如说依赖其他 Operation 正在等待的时候，此时调用 `cancel()` 方法时，会将 isCancelled 设置为 true，isReady 设置为 true。因为 isReady 为 true 了，因此也无需等待其依赖的 Operation 执行完毕，会执行 start 方法，我们看`1.自定义 Operation` 中 start 的实现，会判断 isCancelled 是否为 true，为 true 就不执行 mian 方法了，也就将取消掉了当前 Operation
 * 对于已经执行的 Operation，调用 `cancel()`  方法并不会将当前 Operation 取消，它只会将 isCancelled 标记为 true，那么对于 main 中的任务的取消需要我们手动根据 isCancelled 去取消。同时取消了任务后，还是需要将 isFinished 标记为 true
 
 
 
-### 3. Operation 条件控制
+## 3. Operation 条件控制
 
 在 Sample Code 中，BaseOperation 有个属性 `conditions`，声明了一个 Operation 执行前的条件
 
