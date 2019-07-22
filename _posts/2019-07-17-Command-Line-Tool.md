@@ -17,7 +17,7 @@ toc: true
 
 
 
-### 1. 基础
+## 1. 基础
 
 首先先新建一个 Command Line Tool 工程
 
@@ -37,11 +37,11 @@ toc: true
 
 
 
-#### 1.1 代码
+### 1.1 代码
 
 我们代码都在新建完工程后的 `main.swift` 文件中编写，所有的代码逻辑和写 iOS 应用是一样的
 
-##### 1. 实现 —time 、 -t 命令
+#### 1. 实现 —time 、 -t 命令
 
 ```swift
 // Swift.CommandLine 为自带的类
@@ -58,7 +58,7 @@ if args[1] == "-t" || args[1] == "--time" {
 
 
 
-##### 2. 实现 —add_tag
+#### 2. 实现 —add_tag
 
 ```swift
 // 输入 yzf --add_tag 1.0.0
@@ -101,7 +101,7 @@ if args[1] == "--add_tag" {
 
 
 
-##### 3. 实现 —sum
+#### 3. 实现 —sum
 
 ```swift
 if args[1] == "--sum" {
@@ -125,7 +125,7 @@ if args[1] == "--sum" {
 
 
 
-#### 1.2 可执行文件
+### 1.2 可执行文件
 
 我们编写玩 `main.swift` 后，XCode build 一下，会在 `Products` 生成一个可执行文件
 
@@ -139,7 +139,7 @@ cp CommandLine /usr/local/bin/yzf
 
 
 
-#### 1.3 Run Script
+### 1.3 Run Script
 
 对于每次编译后生成的可执行文件，如果都要通过 `cp CommandLine /usr/local/bin/yzf` 手动去拷贝，显然很麻烦，我们利用 XCode - Build Phases 中 Run Script 功能，在每次编译后自动执行以下命令，那么我们就只要编译即可
 
@@ -151,7 +151,7 @@ cp $BUILT_PRODUCTS_DIR/$PRODUCT_NAME /usr/local/bin/yzf
 
 
 
-### 2. 进阶
+## 2. 进阶
 
 仔细看看  [WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 、[onevcat/FengNiao](<https://github.com/onevcat/FengNiao>)，都会提供一个 `--help` 显示提示信息，并且可以改变 Terminal 输出的文字的颜色，就像下面这种效果
 
@@ -219,10 +219,10 @@ if let value = git_add_tag.value {
 
 
 
-### 参考资料
+> 参考资料
 
-[WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 
+> [WWDCHelper](<https://github.com/kingcos/WWDCHelper>) 
 
-[onevcat/FengNiao](<https://github.com/onevcat/FengNiao>)
+> [onevcat/FengNiao](<https://github.com/onevcat/FengNiao>)
 
-[Swift Package Manager](<https://swift.org/package-manager/>) 
+> [Swift Package Manager](<https://swift.org/package-manager/>) 
