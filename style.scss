@@ -516,9 +516,9 @@ nav {
 
 // TOC
 .toc {
-  width: 240px;
+  width: 20%;
   height: 100%;
-  left: 30%;
+  right: 5%;
   position: fixed;
   z-index: 4;
   padding: 60px 20px 0 20px;
@@ -544,7 +544,7 @@ nav {
 
 @media screen and (max-width:2200px) and (min-width:1200px){
   .withtoc{
-    padding-left: 260px;
+    padding-right: 20%;
   }
 }
 
