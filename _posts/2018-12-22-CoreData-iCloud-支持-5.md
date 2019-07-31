@@ -8,11 +8,11 @@ excerpt_separator: <!--more-->
 toc: true
 ---
 
-在 iOS 10 的时候被 `deprecated`
-
-现在打开[官方资料](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/UsingCoreDataWithiCloudPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013491-CH1-SW1)可以看到苹果报的提示，所以用的时候还是注意一些吧
+在 iOS 10 的时候被 `deprecated`，现在打开[官方资料](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/UsingCoreDataWithiCloudPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013491-CH1-SW1)可以看到苹果报的提示，所以用的时候还是注意一些吧
 
 ![1.png](../images/2018-12-22-CoreData-iCloud-支持-5/1.png)
+
+
 
 <!--more-->
 
