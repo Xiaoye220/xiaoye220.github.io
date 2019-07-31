@@ -12,12 +12,14 @@ toc: true
 
 ![1.png](../images/2018-12-22-CoreData-iCloud-支持-5/1.png)
 
+<!--more-->
+
 现在打开[官方资料](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/UsingCoreDataWithiCloudPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013491-CH1-SW1)可以看到以上苹果报的提示，所以用的时候还是注意一些吧
 
-<!--more-->
 
 
 ### iCloud 支持
+
 1. 在 Capabilities 中开启 iCloud 支持
 
 2. 持久化存储协调器  （NSPersistentStoreCoordinator） 添加 持久化存储 （ NSPersistentStore）   时添加一下参数
