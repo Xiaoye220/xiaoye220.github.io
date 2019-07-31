@@ -10,6 +10,8 @@ toc: true
 
 在使用 `NSKeyedArchiver` 归档 `URLResponse` 时发现 `unchiver` 出来的始终是 `nil` ，因此对 iOS 归档进行了一番研究查找原因
 
+<!--more-->
+
 ### 1. NSCoding , NSSecureCoding
 
 我们要使一个对象支持归档，那么必须实现协议 `NSCoding` ，在 `iOS 6.0` 之后出了 `NSSecureCoding` 用来替代 `NSCoding`。那么 `NSSecureCoding` 相比 `NSCoding` 都有哪些优势呢

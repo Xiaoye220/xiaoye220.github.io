@@ -10,6 +10,8 @@ toc: true
 
 本文主要介绍了 XCode 如何查看 Unit Test 的 Coverage？如何排除 CocoaPods 添加的第三方库对 Coverage 的影响？如何通过 Jenkins 完成自动化测试，并且将结果可视化输出？
 
+<!--more-->
+
 ### 版本信息
 * Xcode - 10.1
 * iOS - 12
