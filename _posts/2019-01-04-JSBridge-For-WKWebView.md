@@ -3,9 +3,9 @@ layout: post
 title: iOS - JSBridge for WKWebView
 date: 2019-01-04
 Author: Xiaoye
-categories: 
 tags: [WKWebView, iOS]
-comments: false
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 WebView 和 JS 通信一般有两种方式

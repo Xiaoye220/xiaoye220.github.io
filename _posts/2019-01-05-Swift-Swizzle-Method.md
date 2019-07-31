@@ -3,9 +3,9 @@ layout: post
 title: iOS - Swift Swizzle Method
 date: 2019-01-05
 Author: Xiaoye
-categories: 
 tags: [Runtime, iOS]
-comments: false
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 本文环境
