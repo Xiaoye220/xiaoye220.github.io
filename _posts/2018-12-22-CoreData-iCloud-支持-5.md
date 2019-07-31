@@ -3,7 +3,7 @@ layout: post
 title: iOS - CoreData iCloud 支持（5）
 date: 2018-12-22
 Author: Xiaoye 
-tags: [CoreData, iOS]
+tags: [CoreData]
 excerpt_separator: <!--more-->
 toc: true
 ---

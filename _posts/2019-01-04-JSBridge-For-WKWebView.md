@@ -3,7 +3,7 @@ layout: post
 title: iOS - JSBridge for WKWebView
 date: 2019-01-04
 Author: Xiaoye
-tags: [WKWebView, iOS]
+tags: [WebView]
 excerpt_separator: <!--more-->
 toc: true
 ---

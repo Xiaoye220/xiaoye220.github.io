@@ -3,7 +3,7 @@ layout: post
 title: iOS - Swift Swizzle Method
 date: 2019-01-05
 Author: Xiaoye
-tags: [Runtime, iOS]
+tags: [Runtime]
 excerpt_separator: <!--more-->
 toc: true
 ---

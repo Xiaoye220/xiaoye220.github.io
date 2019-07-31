@@ -3,7 +3,7 @@ layout: post
 title: iOS - Advanced NSOperations
 date: 2019-07-5
 Author: Xiaoye
-tags: [WWDC, iOS]
+tags: [WWDC]
 excerpt_separator: <!--more-->
 toc: true
 ---
