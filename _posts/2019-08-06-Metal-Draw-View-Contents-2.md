@@ -131,3 +131,11 @@ class Renderer: NSObject, MTKViewDelegate {
 }
 ```
 
+
+
+#### 参考资料
+
+> [Using Metal to Draw a View’s Contents](<https://developer.apple.com/documentation/metal/basic_tasks_and_concepts/using_metal_to_draw_a_view_s_contents>)
+>
+> [Metal【3】—— 实战，清屏](<https://xiaozhuanlan.com/topic/9870134265>)
+
