@@ -66,7 +66,7 @@ func initMTKView() {
 
 要看懂这个代码，需要先理解几个概念，这也是我自己个人的理解，如果觉得有问题可以提
 
-* `textures`：也叫 `render targets`，表示内存中包含图像数据，如 color、depth、stencil 信息，可以被 GPU 访问的很多数据块。GPU 也会保存图像处理结果至 textures 中，在显示 contents 时会从获取其中一个 texture 进行渲染
+* `textures`：也叫 `render targets`，表示内存中包含图像数据（如 color、depth、stencil 信息）可以被 GPU 访问的很多数据块。GPU 也会保存图像处理结果至 textures 中，在显示 contents 时会从获取其中一个 texture 进行渲染
 * `commands`：表示 GPU 进行图像处理的命令，我的理解就是比如一组图像数据，GPU 通过这些命令处理后输出新的一组图像数据
 * `render pass`：是 `textures` + `commands` 
 
