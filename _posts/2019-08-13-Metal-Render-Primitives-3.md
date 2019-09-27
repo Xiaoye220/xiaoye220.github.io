@@ -8,9 +8,7 @@ excerpt_separator: <!--more-->
 toc: true
 ---
 
-上一篇介绍了如何通过 `MTKView` 和 `render pass` 修改 view 的 contents。
-
-这一篇介绍如何通过渲染管线（`render pipeline`）绘制一个三角形。
+本文介绍如何通过渲染管线（`render pipeline`）绘制一个三角形。
 
  <!--more-->
 
