@@ -19,7 +19,7 @@ Some notes about iOS package manager tools, CocoaPods, Swift Package Manager, Ca
 #### 1.2 Install 
 
 ```ruby
-$ sudo gem install cocoapods
+sudo gem install cocoapods
 ```
 
 #### 1.3 Import dependencies
