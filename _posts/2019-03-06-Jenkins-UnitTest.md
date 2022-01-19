@@ -3,7 +3,7 @@ layout: post
 title: iOS - Jenkins 实现 Unit Test 并输出测试结果、覆盖率
 date: 2019-03-06
 Author: Xiaoye
-tags: [杂项]
+tags: [Notes]
 excerpt_separator: <!--more-->
 toc: true
 ---
