@@ -3,7 +3,7 @@ layout: post
 title: iOS Package Manager
 date: 2022-01-19
 Author: Xiaoye
-tags: [Notes]
+tags: [Notes, Learning day]
 excerpt_separator: <!--more-->
 toc: true
 ---
