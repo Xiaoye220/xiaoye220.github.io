@@ -17,7 +17,7 @@ Additions to the  [Vapor Doc - Fluent](https://docs.vapor.codes/fluent/overview/
 
 #### 1.2 Create Database
 
-<img src="../images/2022-07-24-Vapor-Fluent/1.png" alt="图片" style="zoom:50%;" />
+![1](../images/2022-07-24-Vapor-Fluent/1.png)
 
 
 
@@ -44,7 +44,7 @@ $ vapor run migrate --revert
 
 #### 1.5 Check your database with [Postico app](https://eggerapps.at/postico/)
 
-<img src="../images/2022-07-24-Vapor-Fluent/2.png" alt="图片" style="zoom:50%;" />
+![1](../images/2022-07-24-Vapor-Fluent/2.png)
 
 
 
