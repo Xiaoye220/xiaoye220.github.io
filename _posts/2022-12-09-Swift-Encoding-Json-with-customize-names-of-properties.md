@@ -2,12 +2,14 @@
 layout: post
 title: Swift - Encoding Json with customize names of properties
 date: 2022-07-24
-tags: [Vapor]
+tags: [Swift]
 excerpt_separator: <!--more-->
 toc: true
 ---
 
 Swift can simply encode json to object with JSONDecoder
+
+<!--more-->
 
 ```swift
 struct Family: Codable {
