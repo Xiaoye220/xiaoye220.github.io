@@ -2,7 +2,7 @@
 layout: post
 title: Swift - Encoding Json with customize names of properties
 date: 2022-07-24
-tags: [Swift]
+tags: [iOS, Swift, Notes]
 excerpt_separator: <!--more-->
 toc: true
 ---
