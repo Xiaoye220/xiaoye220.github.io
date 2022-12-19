@@ -11,9 +11,9 @@ How to start working with swift-format and swiftlint.
 
 <!--more-->
 
-### 1. swift-format
+## 1. swift-format
 
-#### 1.1 Gets swift-format
+### 1.1 Gets swift-format
 
 swift-format is hosted on [apple/swift-format](https://github.com/apple/swift-format), build executable by following the [README](https://github.com/apple/swift-format#getting-swift-format)
 
@@ -29,7 +29,7 @@ the `swift-format` executable will be located at `.build/release/swift-format`.
 
 
 
-#### 1.2 Place swift-format executable to global path
+### 1.2 Place swift-format executable to global path
 
 ```bash
 # Place swift-format executable to the global path
@@ -38,7 +38,7 @@ ln -s /path/to/your/binary/swift-format /usr/local/bin/swift-format
 
 
 
-#### 1.3 Adds configuration file
+### 1.3 Adds configuration file
 
 Adds configuration file `.swift-format` to customize the rules from the project root dir. Refer to [Configuration](https://github.com/apple/swift-format/blob/main/Documentation/Configuration.md).
 
@@ -52,7 +52,7 @@ Adds configuration file `.swift-format` to customize the rules from the project 
 
 
 
-#### 1.4 Xcode Usage
+### 1.4 Xcode Usage
 
 Add a new `Run Script` to the `Build Phases`  section
 
@@ -66,9 +66,9 @@ fi
 
 
 
-### 2. swiftlint
+## 2. swiftlint
 
-#### 2.1 Gets swiftlint
+### 2.1 Gets swiftlint
 
 swiftlint is hosted on [realm/SwiftLint](https://github.com/realm/SwiftLint), install it by following the [README](https://github.com/realm/SwiftLint#installation)
 
@@ -79,7 +79,7 @@ brew install swiftlint
 
 
 
-#### 2.2 Xcode Usage
+### 2.2 Xcode Usage
 
 Add a new `Run Script` to the `Build Phases`  section
 
@@ -93,7 +93,7 @@ fi
 
 
 
-### 3. Troubleshotting
+## 3. Troubleshotting
 
 When using `swift-format` and `swiftlint` at the same time, some rules may conflict. So you can disable some `swiftlint` rules to avoid warnings.
 
